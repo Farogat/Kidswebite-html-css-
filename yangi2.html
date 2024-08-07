@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position xususiyati bilan ishlash</title>
+    <!-- <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .rasm{
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 30%;
+            height: 50%;
+            /* background-color: #ccc; */
+            position: relative;
+        }
+        img{
+            width: 100%;
+        }
+        .rasm span:first-of-type{
+            z-index: 1;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            padding: 6px;
+        }
+        .rasm span:last-of-type{
+            position: absolute;
+            z-index: 1;
+            bottom: 10px;
+            right: 10px;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            padding: 6px;
+        }
+    </style> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .asosiy{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            margin-top: 200px;
+            padding: 0 12rem;
+                    }
+        .rasm{
+            
+            position: relative;
+            overflow: hidden    ;
+        }
+       
+        img{
+            width: 100%;
+        }
+        
+        .rasm span:first-of-type{
+            z-index: 1;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: white;
+            color: black;
+            font-size: 26px;
+            padding: 8px;
+        }
+        .rasm span:last-of-type{
+            z-index: 1;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            font-size: 26px;
+            padding: 8px;
+            
+        }
+        .rasm:hover img{
+            transform: scale(1.8);
+            
+        }
+        .rasm img{
+            translate: all 0.5s ease;
+        }
+       .rasm::after{
+        position: absolute;
+        top: 0;
+            left: 0;
+            content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+       }
+       .foot-title p{
+        text-align: center;
+        padding: 16px;
+        font-size: 24px;
+       }
+    </style>
+</head>
+<body>
+
+       <div class="asosiy">
+      <div class="rasm-asosiy">
+        <div class="rasm">
+            <img src="images/gym-2.jpg" alt="">
+           <span class="span1">eski</span>
+           <span>yangi</span>
+        </div>
+        <div class="foot-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+
+      <div class="rasm-asosiy">
+        <div class="rasm">
+            <img src="images/gym-2.jpg" alt="">
+           <span class="span1">eski</span>
+           <span>yangi</span>
+        </div>
+        <div class="foot-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+      <div class="rasm-asosiy">
+        <div class="rasm">
+            <img src="images/gym-2.jpg" alt="">
+           <span class="span1">eski</span>
+           <span>yangi</span>
+        </div>
+        <div class="foot-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+      <div class="rasm-asosiy">
+        <div class="rasm">
+            <img src="images/gym-2.jpg" alt="">
+           <span class="span1">eski</span>
+           <span>yangi</span>
+        </div>
+        <div class="foot-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+      
+      <div class="rasm-asosiy">
+        <div class="rasm">
+            <img src="images/gym-2.jpg" alt="">
+           <span class="span1">eski</span>
+           <span>yangi</span>
+        </div>
+        <div class="foot-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+
+      
+      <div class="rasm-asosiy">
+        <div class="rasm">
+            <img src="images/gym-2.jpg" alt="">
+           <span class="span1">eski</span>
+           <span>yangi</span>
+        </div>
+        <div class="foot-title">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>    
+       </div>
+</body>
+</html>

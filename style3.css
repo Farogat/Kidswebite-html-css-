@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.container{
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 1.2rem;
+    /* 1 rem=16px */
+}
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-image: url(images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar{
+    background: rgba(0,0,0,0.6);
+    padding: 1.2rem;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .logo{
+display: block;
+font-size: 18px;
+color: white;
+text-transform: capitalize;
+}
+.navbar-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    text-transform: capitalize;
+    padding-right: 22px;
+    /* transition: all 1s ease; */
+    transition: opacity 0.7s ease;
+}
+.navbar-nav a:hover{
+    /* color:#ccc; */
+    opacity: 0.7;
+}
+
+.banner{
+    display: flex;
+    /* justify-content: center; */
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+}
+.banner-title{
+    font-size: 18px;
+    /* margin-left: 40px; */
+    }
+.banner-title span{
+    color: black;
+}
+.banner-title h1{
+    text-transform: uppercase;
+
+}
+.banner-title p{
+    color: #fafafa;
+    font-size: 24px;
+    word-spacing: 2px;
+}
+form{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.search-input{
+    border: none;
+    font-size: 24px;
+    outline: none;
+}
+.search-btn{
+    border: none;
+    background:none;
+    font-size: 24px;
+}

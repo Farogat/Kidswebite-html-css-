@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', 'serif';
+
+}
+body{
+    line-height: 1.4;
+    color: black;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0/4));
+    background-image: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.navbar{
+    background-color: rgba(0,0,0,0.6);
+    padding: 1.2rem;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .log{
+
+font-size: 2rem;
+display: block ;
+text-decoration: none;
+font-family: 'Oswald', serif;
+letter-spacing: 1px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #fff;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+}
+.navbar-nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-family: serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    display: inline-block;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+/* start of banner section */
+.banner{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 9%;
+}
+.banner-title{
+    font-family: 'Quicksand',serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-left: 40px;
+    
+}
+.banner span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.banner p{
+    color:#fafafa;
+    font-weight: bold;
+    padding-left: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 2px;
+   
+
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    width: 88%;
+   margin-left: 30px;
+}
+.search-input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.2rem;
+    color:black;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+/* start of food section */
+.food{
+    padding: 4.5rem 0;
+    background-color: rgb(245, 248, 249);
+    }
+    .title{
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .title h2{
+        font-family: serif;
+        font-size: 2.4rem;
+    }
+    .title p{
+        text-transform: uppercase;
+        padding: 0.6rem 0;
+    }
+    .food-content{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+    .food-item{
+        cursor: pointer;
+        margin: 0;
+    }
+    .food-img{
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .food-img img{
+        width:100%;
+        height: 100%;
+    }
+    .food-img::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+       width: 100%;
+       height: 100%;
+        background: rgb(0,0,0,0.3);
+    }
+.food-img img{
+    transition: all 0.5s ease;
+}
+.food-item:hover img{
+    transform: scale(1.2);
+}
+.food-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top:10px;
+    left:10px;
+    background-color: black;
+    padding: 0.25rem 1rem;
+    color:#fff;
+
+}
+.food-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom:10px;
+    right: 10px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.food-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.food-title a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: serif;
+}
+/* start of gym blog section */
+
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin: 2rem auto;
+    
+}
+.blog-img{
+    position: relative;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+.blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.blog-text h2{
+    font-family:fantasy;
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+.blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+.blog-text a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+   background-color: rgb(30, 29, 29);
+    padding: 0.55rem 1.2rem;
+    transform: all 0.5s ease;
+
+}
+.blog-text a:hover{
+    background-color: black; 
+}
+/* end of gym section */
+/* start of about section */
+.about{
+    padding: 4.5rem 0;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.about-text{
+margin: 2rem 0;
+}
+.about-text p{
+    font-size: 1.1rem;
+    padding: .6rem 0;
+    opacity: 0.8;
+}
+/* end of about section */
+/* start of footer */
+footer{
+    background-color: black;
+    color: fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+.social-links a:hover{
+    background-color: #fff;
+    color: black;
+}
+footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: serif;
+    letter-spacing: 2px;
+
+}
